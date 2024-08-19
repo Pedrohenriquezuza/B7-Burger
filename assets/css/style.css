@@ -74,8 +74,8 @@ header nav ul li a:hover {
 
 header nav .btn-pedido {
   display: block;
-  padding: 15px 30px;
   border: 1px solid #fff;
+  padding: 15px 30px;
   color: #fff;
   border-radius: 10px;
   font-size: 15px;
@@ -93,6 +93,75 @@ header .menu {
   justify-content: flex-end;
 }
 
+header .menu-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+header .menu-icon div {
+  height: 6px;
+  background-color: #fff;
+}
+
+/* SECTION HERO*/
+
+section.hero .container {
+  display: flex;
+}
+
+section.hero .leftside,
+section.hero .rightside {
+  flex: 1;
+}
+
+section.hero .leftside {
+  padding-bottom: 150px;
+}
+
+section.hero .rightside {
+  text-align: center;
+}
+
+section.hero .rightside img {
+  width: auto;
+  height: 568px;
+}
+
+section.hero h1 {
+  font-family: var(--font-calistoga);
+  font-size: 55px;
+  line-height: 56px;
+  margin-top: 60px;
+}
+
+section.hero h1 span {
+  font-size: 37px;
+}
+
+section.hero p {
+  font-size: 18px;
+  line-height: 20px;
+  margin: 35px 0px;
+}
+
+section.hero .btn-pedido {
+  display: inline-block;
+  color: white;
+  font-family: var(--font-inter);
+  font-weight: 500;
+  background-color: #fe6a0f;
+  padding: 15px 45px;
+  border-radius: 10px;
+  transition: 0.3s all;
+}
+section.hero .btn-pedido:hover {
+  opacity: 0.8;
+}
+
 @media (max-width: 820px) {
   header nav {
     display: none;
@@ -102,17 +171,20 @@ header .menu {
     display: flex;
   }
 
-  header .menu-icon {
-    width: 32px;
-    height: 32px;
-    display: flex;
+  section.hero .container {
     flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
   }
 
-  header .menu-icon div {
-    height: 6px;
-    background-color: #fff;
+  section.hero .leftside {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  section.hero .rightside {
+    padding-bottom: 30px;
+  }
+
+  section.hero .rightside img {
+    height: 320px;
   }
 }

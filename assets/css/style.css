@@ -275,26 +275,52 @@ select {
 
 footer {
   background-color: #1f1f1f;
+  padding-bottom: 10px;
 }
 
-footer .container {
+footer .footer-grid {
   padding-top: 50px;
   padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-adress p {
+  margin-bottom: 6px;
+}
+
+footer h2 {
+  margin-bottom: 20px;
+}
+
+.footer-horario .hours {
+  margin-bottom: 5px;
+}
+
+.footer-color {
+  color: #fe6a0f;
+}
+
+.footer-app img {
+  width: 200px;
+  margin-bottom: 6px;
+  border: 3px solid #fff;
+  border-radius: 20px;
+}
+
+.copyrights {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: end;
+  align-items: end;
+  gap: 7px;
 }
 
-footer .copyrights {
-  font-size: 19px;
-  color: #5f5f5f;
+footer a {
+  color: #fe6a0f;
+  display: inline-block;
 }
 
-footer .copyrights a {
-  color: #ff7c2b;
-}
-
-footer .copyrights a:hover {
+footer a:hover {
   text-decoration: underline;
 }
 
@@ -342,9 +368,13 @@ footer .copyrights a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  footer .container {
-    flex-direction: column;
-    gap: 15px;
+  footer {
+    text-align: center;
+  }
+
+  footer .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 

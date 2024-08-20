@@ -162,6 +162,49 @@ section.hero .btn-pedido:hover {
   opacity: 0.8;
 }
 
+/*SECTION SEARCH*/
+
+.search {
+  margin-top: -100px;
+  background-color: #1f1f1f;
+  padding: 50px 0px;
+}
+
+.search-title {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.search-sides {
+  display: flex;
+  margin-top: 30px;
+  gap: 100px;
+}
+
+.search .leftside,
+.rightside {
+  flex: 1;
+}
+
+.search input,
+select {
+  width: 100%;
+  background-color: #2b2b2b;
+  font-size: 15px;
+  color: white;
+  outline: none;
+  padding: 20px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.search input {
+  background-image: url(../imgs/searchIcon.png);
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  padding-left: 60px;
+}
+
 @media (max-width: 820px) {
   header nav {
     display: none;
@@ -186,5 +229,19 @@ section.hero .btn-pedido:hover {
 
   section.hero .rightside img {
     height: 320px;
+  }
+
+  .search {
+    padding-bottom: 35px;
+  }
+
+  .search-title {
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .search .search-sides {
+    flex-direction: column;
+    gap: 20px;
   }
 }
